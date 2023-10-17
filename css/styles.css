@@ -1,0 +1,102 @@
+.parent {
+    background-color: aqua;
+    border: 2px solid black;
+    /* overflow: hidden; */
+    /* overflow-x: ; */
+    /* overflow-y: ; */
+    position: relative;
+    height: 500vh;
+}
+
+.parent h2 {
+    margin: 0;
+}
+
+.child-1 {
+    background-color: tomato;
+    position: inherit;
+    left: 10px;
+    /* top, bottom, left, right */
+    /* position: relative; */
+    /* left: 50%; */
+}
+
+.child-2 {
+    background-color: burlywood;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.child-3 {
+    background-color: purple;
+    position: sticky;
+    top: 0;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.blue {
+    background-color: blue;
+    position: relative;
+    z-index: 3;
+}
+
+.red {
+    background-color: red;
+    position: relative;
+    top: 75px;
+    left: 25px;
+    z-index: 1;
+}
+
+.green {
+    background-color: green;
+    position: relative;
+    /* top: -300px; */
+    left: 50px;
+    z-index: 2;
+}
+
+header {
+    background: url("../people-office-1.jpg");
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.content {
+    z-index: 999;
+    /* position: ?; */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 555;
+}
+
+.message {
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.slider {
+    border: 2px solid black;
+    margin-top: 20px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
